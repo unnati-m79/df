@@ -14,6 +14,6 @@ area = st.number_input("Area (in square feet)", min_value=100, max_value=10000, 
 
 # Prediction
 if st.button("Predict Price"):
-    input_data = [[area, bedrooms, age]]
+    input_data = [[area]]
     prediction = model.predict(input_data)
     st.success(f"🏡 Estimated Home Price: ₹{prediction[0]:,.2f}")
